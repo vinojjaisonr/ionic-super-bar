@@ -57,6 +57,14 @@ But, When you build an Ionic project for IOS platform. You may need to remove it
 
 ```
 <preference name="StatusBarBackgroundColor" value="#33000000"/>
+
+```
+
+* Remember to add these packages in app.module.ts
+
+```
+imports: [BrowserModule, IonicModule.forRoot({_forceStatusbarPadding:true})],
+
 ```
 
 ## File Structure
